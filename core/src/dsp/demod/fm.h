@@ -48,7 +48,7 @@ namespace dsp::demod {
             base_type::tempStop();
             _samplerate = samplerate;
             demod.setDeviation(_bandwidth / 2.0, _samplerate);
-            updateFilter(_lowPass, _highPass);
+            updateFilter(_lowPass);
             base_type::tempStart();
         }
 
